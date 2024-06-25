@@ -19,16 +19,18 @@ Elements should stack vertically when the window is small?
 -->
 
 <body>
-Created by navbar using the dark theme. Created a fluid container and used 
+<!-- Created by navbar using the dark theme. Created a fluid container and used a logo as a link. -->
     <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="Images/ar-flag.png" alt="logo" width="50" height="40">
                 </img>
             </a>
+<!-- Added a toggle navigation for links for when the screen gets small. -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
+<!-- Links across the top with a dropdown that include links to other pages -->
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -51,8 +53,10 @@ Created by navbar using the dark theme. Created a fluid container and used
           </div>
         </div>
       </nav>
+
+<!-- Header with images using a container, justify-content-around, and col-auto to allow the content and images to flow naturally and evenly spaced with text-center below the images across the page. Used CSS style to format header text -->
     <Header>Arkansas</Header>
-    <div class="container-fluid">
+    <div class="container">
         <div class="row justify-content-around">
             <div class="col-auto">
                 <img src="Images/ar-quartz.jpg" alt="quartz" class="img-fluid">
@@ -69,10 +73,12 @@ Created by navbar using the dark theme. Created a fluid container and used
         </div>
     </div>
 
-    <div class="container-fluid">
+<!-- Container allows the text to adjust freely across the page with some spacing around it. Originally had container-fluid, but the fixed text looked better -->
+    <div class="container">
         <p>Arkansas, located in the southern United States, is known for its diverse geography, from the dense forests of the Ozark and Ouachita Mountains to the fertile plains of the Mississippi River Delta. The state's economy historically relied on agriculture, particularly cotton, but has diversified into industries such as aerospace, manufacturing, and tourism. Arkansas is home to significant cultural and historical landmarks, including the Clinton Presidential Center in Little Rock and the Crater of Diamonds State Park, where visitors can hunt for diamonds. Its natural beauty, including scenic rivers, caves, and hot springs, makes it a popular destination for outdoor enthusiasts. - chatgpt</p>
     </div>
 
+<!-- Created a footer for my form. Used d-flex justify-content-around to place the form in the center of the page and col-auto to automatically space it. -->
     <Footer class="navbar navbar-dark">
             <div class="container d-flex justify-content-around">
                 <div class="row">
