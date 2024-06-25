@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <!-- 
@@ -16,9 +17,86 @@ A Bootstrap navbar, table, and form.
 Bootstrap grid used throughout to format elements
 Elements should stack vertically when the window is small? 
 -->
+<!-- style="background-color: rgb(36, 33, 33); -->
 
 <body>
-    
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">
+           
+            <a class="navbar-brand" href="navbar.html">
+                <img src="Images/ar-flag.png" alt="logo" width="50" height="40">
+                </img>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="history.html">History</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Places to Visit
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="buffalo.html">Buffalo River</a></li>
+                  <li><a class="dropdown-item" href="diamonds.html">Crater of Diamonds</a></li>
+                  <li><a class="dropdown-item" href="eureka.html">Eureka Springs</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <Header>Arkansas</Header>
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            <div class="col-auto">
+                <img src="Images/ar-quartz.jpg" alt="quartz" class="img-fluid">
+                <p class="text-center">State Mineral - Quartz</p>
+            </div>
+            <div class="col-auto">
+                <img src="Images/ar-bird.jpg" alt="bird" class="img-fluid">
+                <p class="text-center">State Bird - Mockingbird</p>
+            </div>
+            <div class="col-auto">
+                <img src="Images/ar-flower.jpg" alt="flower" class="img-fluid">
+                <p class="text-center">State Flower - Appleblossom</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <p>Arkansas, located in the southern United States, is known for its diverse geography, from the dense forests of the Ozark and Ouachita Mountains to the fertile plains of the Mississippi River Delta. The state's economy historically relied on agriculture, particularly cotton, but has diversified into industries such as aerospace, manufacturing, and tourism. Arkansas is home to significant cultural and historical landmarks, including the Clinton Presidential Center in Little Rock and the Crater of Diamonds State Park, where visitors can hunt for diamonds. Its natural beauty, including scenic rivers, caves, and hot springs, makes it a popular destination for outdoor enthusiasts. - chatgpt</p>
+    </div>
+
+    <Footer class="navbar navbar-dark">
+            <div class="container d-flex justify-content-around">
+                <div class="row">
+                    <div class="col-auto">
+                        <h3 class="text-center">Contact Us</h3>
+                        <div class="mb-3">
+                            <label for="email" class="form-label"> Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="opentext" class="form-label">Message</label>
+                            <textarea class="form-control" name="opentext" id="opentext"
+                            placeholder="Leave your message."></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <input type="Submit">
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </Footer>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
 </body>
 </html>
 

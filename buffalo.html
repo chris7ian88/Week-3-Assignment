@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<!-- 
+    Coding Steps:
+Create a new website using HTML and Bootstrap. 
+The website must include the following:
+At least 2 pages.
+A Bootstrap navbar, table, and form.
+Bootstrap grid used throughout to format elements
+Elements should stack vertically when the window is small? 
+-->
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <div class="container-fluid">        
+    <a class="navbar-brand" href="navbar.html">
+        <img src="Images/ar-flag.png" alt="logo" width="50" height="40">
+        </img>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="history.html">History</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          Places to Visit
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="buffalo.html">Buffalo River</a></li>
+          <li><a class="dropdown-item" href="diamonds.html">Crater of Diamonds</a></li>
+          <li><a class="dropdown-item" href="eureka.html">Eureka Springs</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+    <Header>Buffalo River</Header>
+    <div class="container-fluid">
+        <div class="row justify-content-around">
+            <div class="col-auto">
+                <img src="Images/buffalo.jpg" alt="#">
+                <p class="text-center">Kayaker on the Buffalo River</p>
+            </div>
+            <div class="col-auto">
+                <img src="Images/buffalo-float.jpg" alt="#">
+                <p class="text-center">Camping on the Buffalo River</p>
+            </div>
+            <div class="col-auto">
+                <img src="Images/buffalo-whitakerpoint.jpg" alt="#" width="300px">
+                <p class="text-center">Whittaker's Point</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <p>The Buffalo National River in Arkansas is a scenic waterway renowned for its natural beauty and recreational opportunities. Established as America's first national river in 1972, it flows freely for 135 miles through the rugged Ozark Mountains. The river is cherished for its clear, swift waters, towering limestone bluffs, and diverse wildlife.</p>
+
+        <p>The Buffalo River attracts outdoor enthusiasts for activities such as canoeing, kayaking, fishing, hiking, and camping. It offers numerous access points and trails that lead to stunning viewpoints and historic sites. The area is also rich in cultural history, with remnants of Native American settlements and early pioneer homesteads.</p>
+            
+        <p>The 20th century brought economic growth, particularly in timber, manufacturing, and poultry farming. Social changes included the Civil Rights Movement, exemplified by the desegregation crisis at Little Rock Central High School in 1957. Today, Arkansas continues to evolve economically and culturally, balancing its rich heritage with modern developments.</p>
+        <p>-- ChatGPT</p>
+    </div>
+
+    
+<script src="node_modules/jquery/dist/jquery.js"></script>
+<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
